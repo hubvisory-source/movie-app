@@ -1,0 +1,12 @@
+.button {
+  padding: 16px;
+  background-color: brown;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  min-width: 100px;
+}
+.button:hover {
+  background-color: orange;
+}

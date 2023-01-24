@@ -1,0 +1,48 @@
+.overlay {
+  z-index: 5;
+  position: fixed;
+  width: 100vw;
+  height: 0%;
+  opacity: 0;
+  background-color: #00000070;
+  transition: opacity 0.3s ease-in-out;
+}
+.display {
+  height: 100%;
+  opacity: 1;
+}
+
+.watchlist {
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.hide .watchlist {
+  width: 0vw;
+  margin-left: 100%;
+}
+.display .watchlist {
+  width: 300px;
+  margin-left: calc(100% - 300px);
+}
+.watchlistContent {
+  margin: 32px;
+}
+.media {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  padding: 4px;
+}
+.media:hover {
+  background-color: #d9d9d9;
+}
+.media img {
+  width: 50px;
+  aspect-ratio: 0.7;
+  margin-right: 8px;
+}

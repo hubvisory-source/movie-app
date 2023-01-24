@@ -1,0 +1,12 @@
+.mediaContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 32px;
+}
+
+@media screen and (max-width: 680px) {
+  .mediaContainer {
+    grid-template-columns: 1fr;
+  }
+}

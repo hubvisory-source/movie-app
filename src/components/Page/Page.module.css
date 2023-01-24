@@ -1,0 +1,23 @@
+.page {
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 12px;
+}
+.content > * {
+  width: calc(50% - 32px);
+}
+@media screen and (max-width: 680px) {
+  .content > * {
+    width: 100%;
+  }
+}
