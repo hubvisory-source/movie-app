@@ -1,15 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getCurrentFomatedDateTimeString } from "../../utils/date";
 
 const Clock = () => {
-  var date = getCurrentFomatedDateTimeString();
+  const [date, setDate] = useState(getCurrentFomatedDateTimeString());
   useEffect(() => {
     const interval = setInterval(() => {
-      date = getCurrentFomatedDateTimeString();
+      let v = getCurrentFomatedDateTimeString();
+      setDate(v);
     }, 1000);
-    return () => clearInterval(interval);
+    return () => clearInterval(interval);//Clear the interval here
   }, []);
 
-  return <>{date}</>;
+  return <>{date}</>;//TODO Change the format
 };
 export default Clock;
